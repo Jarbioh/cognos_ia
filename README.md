@@ -21,6 +21,6 @@ O objetivo é fornecer uma plataforma institucional moderna, acessível e respon
 
 ## 📂 Estrutura
 
-## Entrando no Link Abaixo
+## Entra no Link Abaixo
 https://cognos-ia.vercel.app/
 
