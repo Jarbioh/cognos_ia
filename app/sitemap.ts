@@ -1,0 +1,1 @@
+export default function sitemap(){const b='https://cognos-ia.edu'; const r=['','/missao','/carta','/formacao','/noticias','/eventos','/faq','/contactos']; return r.map(p=>({url:b+p,lastModified:new Date()})) as any}

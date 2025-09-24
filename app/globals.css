@@ -1,0 +1,48 @@
+:root {
+  /* reserva o topo da página para não “comer” os headings ao navegar por #anchor */
+  scroll-padding-top: 96px;
+}
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 96px; }
+body { margin: 0; font-family: 'Poppins', 'Inter', system-ui, sans-serif; background: #fefefe; color: #111; line-height: 1.6; }
+a { color: #1a73e8; text-decoration: none; }
+@font-face { font-family: 'Chiller'; src: url('/fonts/Chiller.ttf') format('truetype'); font-display: swap; }
+.chiller { font-family: 'Chiller', 'Poppins', 'Inter', system-ui, sans-serif; }
+
+@media print {
+  nav, footer, .skip-link, [role="dialog"], button[aria-label="Abrir chatbot Cognos"], .MuiFab-root { display: none !important; }
+  main { padding: 0 !important; }
+  a { text-decoration: none; color: #000; }
+  * { box-shadow: none !important; }
+}
+
+/* Evita “salto” / overflow no Drawer */
+.MuiDrawer-paper {
+  box-sizing: border-box;
+  width: 300px; /* mesmo valor usado no DrawerList */
+}
+
+/* garante FAB redondo em qualquer tema */
+.MuiFab-root {
+  border-radius: 50% !important;
+}
+
+/* Imagens nunca estouram o quadro em listas/menus */
+img { width: auto; height: auto; max-width: 100%; }
+
+/* Foco coerente com a marca */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid rgba(213, 66, 38, .55);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(213, 66, 38, .55);
+  outline-offset: 2px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 3px rgba(213, 66, 38, .3);
+}
